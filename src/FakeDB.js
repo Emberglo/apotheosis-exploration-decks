@@ -3,7 +3,7 @@ const fakeDB = [
         id: 1,
         type: "Explore?",
         title: "Quaking Mat",
-        rulesText1: "Test Agility. Falure Restrained. Critical Falure Suffocate",
+        rulesText1: "Test Agility. Failure Restrained. Critical Falure Suffocate",
         rulesText2: "Loot 1000 gold amulet",
         rulesText3: "",
         rulesText4: "",
