@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import fakeDB from './FakeDB';
+import Card from './Card';
 
 function App() {
+
+  const cards = fakeDB;
+  let card = undefined;
+
+  function drawCard() {
+    let randomNumber = Math.floor(Math.random() * 4);
+    card = cards[randomNumber];
+    console.log(card);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card key={card?.id} id={card?.id} type={card?.type} title={card?.title} />
+      <div onClick={drawCard}>
+        Click to Draw
+      </div>
     </div>
   );
 }
