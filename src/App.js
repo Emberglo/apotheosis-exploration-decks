@@ -21,6 +21,7 @@ function App() {
         id={card?.id} 
         type={card?.type} 
         title={card?.title} 
+        image={card?.image}
         rulesText1={card?.rulesText1}
         rulesText2={card?.rulesText2}
         rulesText3={card?.rulesText3}
